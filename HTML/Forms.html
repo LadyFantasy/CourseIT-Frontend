@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+</head>
+
+<body>
+
+    <form action="#">
+
+        <label>
+            <h2>NOMBRE</h2>
+            <input type="text" name="nombre" placeholder="Nombre">
+        </label>
+        <br>
+        <br>
+        <label>
+            <h2>APELLIDO</h2>
+            <input type="text" name="apellido" placeholder="Apellido">
+        </label>
+        <br>
+        <br>
+        <label>
+            <h2>EDAD</h2>
+            <input type="number" name="edad" placeholder="Edad">
+        </label>
+
+        <br>
+        <br>
+
+        <h2>Nacionalidad</h2>
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="arg">Argentina</option>
+            <option value="ven">Venezolana</option>
+            <option value="chi">Chilena</option>
+        </select>
+
+        <br>
+        <br>
+
+        <h2>Tecnología</h2>
+        <label>
+            <input type="checkbox" name="front">
+            Frontend
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="back">
+            Backend
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="full">
+            Fullstack
+        </label>
+        <br>
+        <br>
+
+        <h2>¿Sos mayor de edad?</h2>
+        <label>
+            <!-- input radio mismo [name] -->
+            <input type="radio" name="mayor" value="si">
+            Sí
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="mayor" value="no">
+            No
+        </label>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar" id="submit">
+
+    </form>
+</body>
+

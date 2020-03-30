@@ -1,0 +1,128 @@
+
+
+.container {
+    display: flex;
+    font-family: sans-serif;
+    width: 65%;
+}
+
+.title-left {
+    font-size: 1.8rem;
+
+}
+
+.article {
+    position: relative;
+    margin-right: 11rem;
+}
+
+.up {
+    margin-bottom: 3rem;
+}
+
+.author {
+    font-size: .8rem;
+    margin-top: -1rem;
+    color: rgb(145, 145, 145);
+}
+
+.author-span {
+    color: blue;
+}
+
+.text {
+    line-height: 1.8rem;
+}
+
+.css {
+    margin-right: .5rem;
+    background-color: rgb(2, 226, 2);
+    color: white;
+    padding: .2rem .5rem;
+    font-size: .7rem;
+}
+
+.pure {
+    background-color: rgb(59, 120, 252);
+    color: white;
+    padding: .2rem .5rem;
+    font-size: .7rem;
+}
+
+.js {
+    background-color: rgb(255, 8, 28);
+    color: white;
+    padding: .2rem .5rem;
+    font-size: .7rem;
+}
+
+.linked {
+    color: blue;
+}
+
+.title {
+    font-size: 1.7rem;
+
+}
+
+
+.post {
+    color: rgb(158, 158, 158);
+    font-size: .8rem;
+}
+
+
+img {
+    width: 3rem;
+    border-radius: 50px;
+    position: absolute;
+    top: 2.5rem;
+    left: 43rem;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: -.5rem;
+}
+
+
+.title-left {
+    margin-top: 5rem;
+    margin-bottom: -1rem;
+    line-height: 2.5rem;
+}
+
+
+.text-left {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+
+.left-square {
+    border: white solid 1px;
+    padding: .5rem 1rem;
+    font-size: .7rem;
+    text-align: center;
+}
+
+.left {
+    flex: 1;
+    background-color: rgba(39, 75, 99, 0.7);
+    color: white;
+    margin-right: 3.7rem;
+
+}
+
+.left-container {
+    padding: 4.5rem 1.3rem;
+    text-align: right;
+}
+
+.right {
+    flex: 4;
+
+}
