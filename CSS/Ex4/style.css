@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(328deg, rgba(244, 158, 242, 0.8435749299719888) 46%, rgba(136, 48, 244, 0.7987570028011204) 100%);
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 2rem 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    overflow: hidden;
+    height: 90vh;
+    width: 60vw;
+    display: flex;
+    border-radius: 15px;
+}
+
+
+.main {
+    /* width: 50%; */
+    flex: 1;
+    background-color: rgb(247, 240, 241);
+    padding: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-title-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: .3rem;
+}
+
+.icon-coffee {
+    color: rgb(247, 39, 247);
+    font-size: 1.8rem;
+}
+
+.login-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(133, 132, 132);
+}
+
+.button {
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin: .5rem;
+}
+
+.buttons-login {
+    text-align: center;
+}
+
+.button.facebook {
+    background-color: rgba(47, 47, 192, 0.836);
+    width: 10rem;
+    padding: .5rem 0 .8rem 0;
+
+}
+
+.button.xing {
+    background-color: rgba(6, 90, 68, 0.932);
+    width: 10rem;
+    padding: .5rem 0 .8rem 0;
+}
+
+.buttons-login .fa {
+    padding-right: .5rem;
+    font-size: 1.6rem;
+}
+
+.or {
+    color: rgb(167, 162, 162);
+    margin: 2.5rem;
+}
+
+.email-label,
+.password-label {
+    color: rgb(167, 162, 162);
+
+}
+
+.email-input,
+.password-input {
+    display: block;
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid rgba(95, 6, 146, 0.281);
+    padding: .2rem 6rem;
+    margin: .5rem 0;
+}
+
+.checkbox-remember,
+.link-password {
+    margin-top: 1rem;
+}
+
+.checkbox-remember {
+    text-decoration: none;
+}
+
+.checkbox-remember-label {
+    font-weight: 500;
+    margin-left: -.4rem;
+}
+
+.link-password {
+    text-decoration: none;
+    margin-left: 6rem;
+    color: black;
+}
+
+.link-password:hover {
+    color: blue;
+}
+
+.buttons-form {
+    margin: 1rem auto;
+    transition: all .5s;
+}
+
+.button-login,
+.button-signUp {
+    padding: .5rem 2.5rem;
+}
+
+.button-login:hover,
+.button-signUp:hover {
+    padding: 1rem 4rem;
+}
+
+
+.button-login {
+    background: rgb(166, 77, 226);
+    background: linear-gradient(90deg, rgba(166, 77, 226, 0.9612219887955182) 0%, rgba(253, 29, 222, 1) 72%, rgba(252, 235, 69, 1) 100%);
+}
+
+.button-signUp {
+    border: 1px solid grey;
+    color: black;
+}
+
+.footer {
+    padding: 1rem;
+    color: rgb(167, 162, 162);
+}
+
+.footer-linked {
+    color: rgba(55, 55, 236, 0.849);
+}
+
+.photo {
+    flex: 1;
+    background-image: url("foto.jpg");
+    background-position: center;
+    padding: 2.3rem;
+}
