@@ -9,21 +9,20 @@
     height: 97vh;
     /* width: 100vw; */
 
-    background: linear-gradient(328deg, 
-        rgba(236, 181, 235, 0.712)
-        57%,
-        rgba(134, 68, 214, 0.699) 100%);
+    background: linear-gradient(328deg,
+            rgba(236, 181, 235, 0.712) 57%,
+            rgba(134, 68, 214, 0.699) 100%);
 
     font-family: 'Ubuntu', sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    
+
 }
 
 .container {
@@ -81,7 +80,7 @@
 .button.facebook {
     background-color: rgba(47, 47, 192, 0.836);
     /* width: 10rem; */
-     padding: .5rem;
+    padding: .5rem;
     flex: 1 0 calc(50% - 15px);
     display: flex;
     align-items: center;
@@ -98,13 +97,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .button.facebook:hover,
-.button.xing:hover{
+.button.xing:hover {
     transform: scale(1.1);
 }
+
 .buttons-login .fa {
     padding-right: .5rem;
     font-size: 1.6rem;
@@ -116,18 +116,19 @@
 }
 
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .email-label,
 .password-label {
     color: rgb(167, 162, 162);
 
 }
 
-.input-container{
+.input-container {
     display: flex;
     flex-direction: column;
 }
@@ -140,12 +141,12 @@
     border-bottom: 2px solid rgba(95, 6, 146, 0.281);
     width: 100%;
     margin-bottom: 1rem;
-    
+
 }
 
-.help-container{
+.help-container {
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: space-between;
     margin: 1rem 0;
 }
@@ -216,43 +217,43 @@
 } */
 
 @media (min-width:1600px) {
-    *{
+    * {
         font-size: 18px;
     }
 }
 
 
 
-
-@media screen and (orientation:portrait){
-    *{
-        font-size: 25px;
-    }
-
-    .main{
-        width: 100%;
-    }
-
-    .container{
-        width: 90vw;
-        min-height: 60vh;
-    }
-}
-
 @media (max-width:1000px) {
-    .main{
+    .main {
         width: 100%;
     }
-    .container{
+
+    .container {
         width: 90vw;
         min-height: 60vh;
     }
 }
 
+
+
+@media screen and (orientation:portrait) {
+    * {
+        font-size: 22px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .container {
+        width: 90vw;
+        min-height: 60vh;
+    }
+}
 
 @media (max-width:600px) {
-    *{
+    * {
         font-size: 12px;
     }
 }
-
