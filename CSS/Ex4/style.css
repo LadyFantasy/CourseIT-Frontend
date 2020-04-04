@@ -2,16 +2,17 @@
 
 * {
     box-sizing: border-box;
+    /* font-size: 16px; */
 }
 
-html {
-    height: 100vh;
-    width: 100vw;
+.body {
+    height: 97vh;
+    /* width: 100vw; */
 
     background: linear-gradient(328deg, 
-        rgba(244, 158, 243, 0.712)
+        rgba(236, 181, 235, 0.712)
         57%,
-        rgba(136, 48, 244, 0.699) 100%);
+        rgba(134, 68, 214, 0.699) 100%);
 
     font-family: 'Ubuntu', sans-serif;
 
@@ -22,7 +23,6 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    /* padding: 1rem 1.5rem; */
     
 }
 
@@ -41,12 +41,11 @@ html {
 
 .main {
     width: 50%;
-    /* flex: 1; */
     background-color: rgb(247, 240, 241);
     padding: 2.3rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .login-title-title {
@@ -82,16 +81,24 @@ html {
 .button.facebook {
     background-color: rgba(47, 47, 192, 0.836);
     /* width: 10rem; */
-    padding: .5rem 0 .8rem 0;
+     padding: .5rem;
     flex: 1 0 calc(50% - 15px);
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
 
 }
 
 .button.xing {
     background-color: rgba(6, 90, 68, 0.932);
     /* width: 10rem; */
-    padding: .5rem 0 .8rem 0;
+    padding: .5rem;
     flex: 1 0 calc(50% - 15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .button.facebook:hover,
@@ -105,13 +112,24 @@ html {
 
 .or {
     color: rgb(167, 162, 162);
-    margin: 2.5rem;
+    text-align: center;
 }
 
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .email-label,
 .password-label {
     color: rgb(167, 162, 162);
 
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .email-input,
@@ -120,13 +138,16 @@ html {
     border: none;
     background-color: inherit;
     border-bottom: 2px solid rgba(95, 6, 146, 0.281);
-    padding: .2rem 6rem;
-    margin: .5rem 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    
 }
 
-.checkbox-remember,
-.link-password {
-    margin-top: 1rem;
+.help-container{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin: 1rem 0;
 }
 
 .checkbox-remember {
@@ -135,12 +156,10 @@ html {
 
 .checkbox-remember-label {
     font-weight: 500;
-    margin-left: -.4rem;
 }
 
 .link-password {
     text-decoration: none;
-    margin-left: 6rem;
     color: black;
 }
 
@@ -149,7 +168,7 @@ html {
 }
 
 .buttons-form {
-    margin: 1rem auto;
+    display: flex;
     transition: all .6s ease-out;
 }
 
@@ -166,7 +185,7 @@ html {
 
 .button-login {
     background: rgb(166, 77, 226);
-    background: linear-gradient(90deg, rgba(166, 77, 226, 0.9612219887955182) 0%, rgba(253, 29, 222, 1) 72%, rgba(252, 235, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(166, 77, 226, 0.9612219887955182) 0%, rgba(253, 29, 222, 1) 72%, rgba(252, 234, 69, 0.61) 100%);
 }
 
 .button-signUp {
@@ -183,6 +202,9 @@ html {
     color: rgba(55, 55, 236, 0.849);
 }
 
+
+
+/* NO SIRVE PORQUE USÉ UN SOLO CONTAINER Y ESTÁ LA IMG DE FONDO */
 /* .photo {
     flex: 1;
     flex-shrink: inherit;
@@ -192,3 +214,34 @@ html {
     background-position: center;
     padding: 2.3rem;
 } */
+
+@media (min-width:1600px) {
+    *{
+        font-size: 18px;
+    }
+}
+
+@media screen and (orientation:portrait){
+    *{
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width:1100px) {
+    .main{
+        width: 100%;
+    }
+    .container{
+        width: 90vw;
+        min-height: 60vh;
+    }
+}
+
+
+@media (max-width:600px) {
+    *{
+        font-size: 12px;
+    }
+}
+
