@@ -48,14 +48,30 @@ $gray-text: 1rem;
             text-align: center;
             width: 40%;
 
+            @media (max-width: 1200px) {
+                width: 50%;
+              }
+
             .title {
                 font-size: 2.3rem;
                 text-shadow: 2px 3px 1px rgba(83, 83, 83, 0.555);
+
+                @media (max-width: 1300px) {
+                    font-size: 1.7em;
+                  }
+                  
+                  @media (max-width: 1000px) {
+                    font-size: 1.5em;
+                  }
 
             }
 
             .text {
                 text-shadow: 1px 2px 1px rgba(94, 94, 94, 0.568);
+
+                @media (max-width: 1200px) {
+                    font-size: .9em;
+                  }
             }
 
             .form-form {
@@ -75,11 +91,19 @@ $gray-text: 1rem;
                         margin: .5rem 0;
                         border-radius: 3px;
                         border: none;
+                        
+                        @media (max-width: 850px) {
+                            width: 100%;
+                          }
 
 
                         &:nth-child(1),
                         &:nth-child(3) {
                             margin-right: .5rem;
+
+                        @media (max-width:850px){
+                            margin-right: 0;
+                        }
                         }
 
                         &::placeholder {
