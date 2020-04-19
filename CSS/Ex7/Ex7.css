@@ -44,6 +44,11 @@ html {
 
 .link-button {
   border: 1px solid white;
+  transition: all 0.4s ease-in-out;
+}
+.link-button:hover {
+  background-color: white;
+  color: #494949;
 }
 
 .nav {
@@ -75,6 +80,23 @@ html {
   min-height: 100vh;
   background-color: rgba(100, 100, 100, 0.733);
   background-blend-mode: multiply;
+  position: relative;
+}
+.wrapper .photo .fa {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  padding: 2rem 1rem;
+}
+@media (min-width: 500px) {
+  .wrapper .photo .fa {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .photo .disappear {
+    display: none;
+  }
 }
 .wrapper .photo .lava-title {
   padding: 6rem 4rem;
@@ -94,8 +116,8 @@ html {
 }
 .wrapper .photo .text {
   text-align: center;
-  margin: 0 auto;
-  max-width: 30rem;
+  margin: 3rem auto;
+  max-width: 25rem;
 }
 .wrapper .photo .text .text-text {
   margin-top: 1.5rem;
@@ -126,6 +148,10 @@ html {
   justify-content: flex-end;
   padding-bottom: 2rem;
   box-shadow: 0px 19px 14px -8px rgba(0, 0, 0, 0.486);
+  transition: transform 0.5s ease-in-out;
+}
+.wrapper .articles .articles-container .article-photo:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .wrapper .articles .articles-container .article-photo {
@@ -170,6 +196,10 @@ html {
   width: 100%;
   padding: 0.7rem;
   margin: 1rem 0;
+  transition: background-color 0.4s ease-in-out;
+}
+.wrapper .suscribe .form .input:hover {
+  background-color: #666666;
 }
 .wrapper .suscribe .form .input::placeholder {
   color: #afafaf;

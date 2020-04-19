@@ -55,6 +55,12 @@ html {
 
 .link-button {
     border: 1px solid white;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        background-color: white;
+        color:rgb(73, 73, 73);
+    }
 }
 
 
@@ -92,9 +98,25 @@ html {
         min-height: 100vh;
         background-color: rgba(100, 100, 100, 0.733);
         background-blend-mode: multiply;
+        position: relative;
+
+        .fa {
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+            padding: 2rem 1rem;
+
+            @media(min-width: 500px) {
+                display: none;
+            }
+        }
 
 
-
+        .disappear {
+            @media(max-width: 500px) {
+                display: none;
+            }
+        }
 
         .lava-title {
             padding: 6rem 4rem;
@@ -118,8 +140,8 @@ html {
 
         .text {
             text-align: center;
-            margin: 0 auto;
-            max-width: 30rem;
+            margin: 3rem auto;
+            max-width: 25rem;
 
 
 
@@ -155,6 +177,11 @@ html {
                 justify-content: flex-end;
                 padding-bottom: 2rem;
                 box-shadow: 0px 19px 14px -8px rgba(0, 0, 0, 0.486);
+                transition: transform .5s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
 
                 @media(max-width:768px) {
                     width: 100%;
@@ -205,6 +232,11 @@ html {
                 width: 100%;
                 padding: .7rem;
                 margin: 1rem 0;
+                transition: background-color .4s ease-in-out;
+
+                &:hover {
+                    background-color: rgb(102, 102, 102)
+                }
 
 
                 &::placeholder {
