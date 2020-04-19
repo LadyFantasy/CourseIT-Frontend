@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-size: 2.3em;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
+}
+
+.line {
+  display: inline-block;
+  border-bottom: 3px solid white;
+  padding-top: 0.7rem;
+  width: 3.5rem;
+}
+
+.link {
+  all: unset;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-shadow: 4px 4px 6px #363636;
+}
+
+.link-button {
+  border: 1px solid white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.nav .l {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.background {
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: #505050;
+}
+
+.wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+  background-color: #494949;
+}
+.wrapper .photo {
+  background-image: url("https://imagenes.diario16.com/wp-content/uploads/2018/03/Art%C3%ADculo-40.-Imagen.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  background-color: rgba(100, 100, 100, 0.733);
+  background-blend-mode: multiply;
+}
+.wrapper .photo .lava-title {
+  padding: 6rem 4rem;
+  letter-spacing: 0.4rem;
+}
+.wrapper .photo .lava-title .lava-title-title {
+  font-size: 4.3rem;
+  text-shadow: 0px -4px 3px #535353;
+}
+.wrapper .photo .lava-title .lava-title-subtitle {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  color: #42daf5;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-shadow: 0px -4px 3px #535353;
+}
+.wrapper .photo .text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+.wrapper .photo .text .text-text {
+  margin-top: 1.5rem;
+  font-size: 0.7em;
+  font-weight: 300;
+  line-height: 2em;
+}
+.wrapper .articles {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.wrapper .articles .articles-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .wrapper .articles .articles-container {
+    flex-direction: column;
+  }
+}
+.wrapper .articles .articles-container .article-photo {
+  width: calc((100%/3 - 4rem));
+  min-height: 20rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+  box-shadow: 0px 19px 14px -8px rgba(0, 0, 0, 0.486);
+}
+@media (max-width: 768px) {
+  .wrapper .articles .articles-container .article-photo {
+    width: 100%;
+  }
+}
+.wrapper .articles .articles-container .article-photo:nth-child(1) {
+  background-image: url("https://images.unsplash.com/photo-1523175347343-52d8867ca0bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .articles .articles-container .article-photo:nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1515767703468-b3ff6f3d4c99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .articles .articles-container .article-photo:nth-child(3) {
+  background-image: url("https://images.unsplash.com/photo-1544044479-4ff512bd5ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .articles .articles-container .article-photo .subtitle-line {
+  display: inline-block;
+  border-bottom: 1px solid white;
+  padding-top: 0.7rem;
+  width: 2.5rem;
+  margin: 0 auto;
+}
+.wrapper .suscribe {
+  background-color: #3b3b3b;
+  padding: 4rem 0;
+}
+.wrapper .suscribe .form {
+  padding: 1rem;
+  max-width: 25rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.wrapper .suscribe .form .input {
+  all: unset;
+  background-color: #575757;
+  width: 100%;
+  padding: 0.7rem;
+  margin: 1rem 0;
+}
+.wrapper .suscribe .form .input::placeholder {
+  color: #afafaf;
+  text-align: left;
+}
+.wrapper .footer {
+  padding: 2rem 0;
+}
+
+/*# sourceMappingURL=Ex7.css.map */
